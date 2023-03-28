@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "网站拦截器",
+  "version": "1.0",
+  "description": "阻止访问指定网站的插件。",
+  "permissions": ["tabs", "contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icon48.png"
+  },
+  "action": {
+    "default_popup": "options.html",
+    "default_title": "网站拦截器",
+    "default_icon": {
+      "16": "icon48.png",
+      "32": "icon48.png",
+      "48": "icon48.png",
+      "128": "icon48.png"
+    }
+  }
+}
